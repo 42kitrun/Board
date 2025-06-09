@@ -1,0 +1,58 @@
+.navigation {
+  position: static; /* 화면에 고정 */
+  left: 0;
+  height: 100%; /* 화면 전체 높이 */
+  display: flex;
+  flex-direction: column; /* 아이템을 세로로 정렬 */
+}
+
+/* 남은 공간을 채우는 스타일 */
+.navigation::after {
+  content: "";
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  background-color: #fff; /* 흰색 배경 */
+}
+
+.navList {
+  list-style-type: none;
+}
+
+.navItem {
+  margin-bottom: 2px; /* 각 아이템 간의 간격 */
+  background-color: grey;
+}
+
+.navItem:last-child {
+  margin-bottom: 0; /* 마지막 아이템에는 간격을 추가하지 않음 */
+}
+
+.navItem a {
+  display: block;
+  padding: 17px 20px;
+  color: #333;
+  background-color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navList :hover,
+.navList .active {
+  font-weight: bold;
+}
+
+/*미디어 쿼리는 화면 너비가 768픽셀 이하일 때(주로 태블릿이나 모바일 기기) 적용되는 스타일을 정의*/
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navItem {
+    margin: 10;
+  }
+}

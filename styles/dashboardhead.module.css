@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  height: 73px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  background-color: white;
+  border-bottom: 1px solid #4caf50; /* 녹색 하단 라인 */
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: black; /* 텍스트 색상 */
+}
+
+.logoutButton {
+  font-size: large;
+  font-weight: bold;
+  padding: 13px 25px;
+  background-color: green;
+  color: white; /* 버튼 텍스트 색상 */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: #00251a; /* 버튼 hover 색상 */
+}

@@ -1,0 +1,136 @@
+.container {
+  width: 800px;
+  color: black;
+  overflow-x: hidden; /* 가로 오버플로우 숨김 */
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.graphContainer {
+  width: 99.8%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.yAxis {
+  width: 1.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: white;
+}
+
+.yAxisLabel {
+  font-size: 0.9rem;
+  fill: black;
+  text-anchor: end;
+  text-anchor: middle; /* 텍스트를 수평 중앙 정렬 */
+  dominant-baseline: middle; /* 텍스트를 수직 중앙 정렬 */
+}
+
+.gridLine {
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.xAxisLabel {
+  font-size: 0.75rem;
+  fill: black;
+  text-anchor: middle; /* 텍스트를 수평 중앙 정렬 */
+}
+
+.line {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+}
+
+.dataPoint {
+  fill: var(--primary-color);
+  r: 7;
+}
+
+.zoomLabel {
+  position: absolute;
+  top: 0;
+  right: calc(15px + (30px * 2)); /* 줌 버튼 위치 기준으로 오른쪽에 배치 */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center; /* 텍스트를 가로 정렬 */
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.zoomControls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center; /* 버튼과 텍스트 정렬 */
+}
+
+.zoomControls button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.scrollbar {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+  outline: none;
+  opacity: 1; /* 항상 보이도록 변경 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollbar::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px; /* 고정 너비로 변경 */
+  height: 7px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scrollbar::-moz-range-thumb {
+  width: 16px;
+  height: 7px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 스크롤바 컨테이너 스타일 추가 */
+.scrollbarContainer {
+  width: 100%;
+  display: none; /* 기본적으로 숨김 */
+}
+
+.scrollbar::-webkit-slider-thumb {
+  width: var(--thumb-width, 16px); /* 동적 너비 적용 */
+}
+
+.scrollbar::-moz-range-thumb {
+  width: var(--thumb-width, 16px);
+}
+
+.zoomLabel {
+  position: absolute;
+  right: 20px + (30px * 2); /* 줌 버튼과의 간격 조정 */
+  font-weight: bold;
+  white-space: nowrap; /* 가로 정렬 유지 */
+}

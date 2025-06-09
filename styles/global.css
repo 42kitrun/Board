@@ -1,0 +1,54 @@
+:root {
+  /* Primary Color */
+  --primary-color: #26c1d6;
+  --primary-blue-0: #05abbc;
+  --primary-blue-200: #7fdbe8;
+  --primary-bright-300: #abf1fb;
+  /* 버튼색 */
+  --button-bg-color: #e1f8fc;
+  --button-text-color: #05abbc;
+  --button-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  /* 배경색 */
+  --background-color: #f4f4f4;
+  /* 카테고리 색 */
+  --body-600: #f8ac45;
+  --body-300: #ffefd9;
+  --nutrition-600: #6aafa1;
+  --nutrition-color: #e3f5f5;
+  --heart-600: #e389b5;
+  --heart-300: #ffe8f5;
+  --sleep-600: #8e91be;
+  --sleep-300: #e9ecff;
+  /* 분석결과색 */
+  --success-color: #18a0fb;
+  --fail-color: #ff7979;
+  /*글자크기*/
+  --title-font-size: 1.5rem;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #f2feff;
+  color: #26c1d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: var(--box-sizing);
+}

@@ -1,0 +1,26 @@
+/* layout.module.css */
+.body {
+  height: 100%; /* 뷰포트 전체 높이 사용 */
+  background-color: #f1f1f1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*container = nav + main*/
+.container {
+  display: flex;
+  height: calc(100%-73px); /* 뷰포트 높이 */
+}
+
+/*Navigation*/
+.nav {
+  width: 240px; /* 네비게이션의 너비를 고정 */
+  height: calc(100%-73px); /* body 높이에 맞춤 */
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 */
+}
+
+/*main*/
+.main {
+  flex: 1; /* 남은 공간을 차지하도록 설정 */
+  overflow-y: auto; /* 스크롤 가능하도록 설정 */
+}

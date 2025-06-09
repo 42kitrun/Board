@@ -1,0 +1,60 @@
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.graphContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.categoryItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryTitle {
+  font-weight: 600;
+}
+
+.barContainer {
+  margin: 0.75rem 0;
+  width: 90%;
+}
+
+.barBackground {
+  position: relative;
+  height: 30px;
+  background-color: #e5e7eb;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.barFill {
+  position: absolute;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.percentageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.dateLabel {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}

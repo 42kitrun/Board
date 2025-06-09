@@ -1,0 +1,33 @@
+.userInfoContainer {
+  width: 83.4dvw;
+  min-width: 1450px;
+  display: flex;
+  margin: 1dvh 1dvw;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 0 5px 10px grey; /* 그림자 효과 추가 */
+}
+
+.userInfoItem {
+  display: flex;
+  align-items: center;
+  color: #333;
+  margin-right: 30px;
+}
+
+.userInfoItem:last-child {
+  margin-right: 0;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: normal; /* 일반 폰트 */
+  margin-right: 10px;
+}
+
+.value {
+  font-size: 25px;
+  font-weight: bold; /* 볼드 폰트 */
+}

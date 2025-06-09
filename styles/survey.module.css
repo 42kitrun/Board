@@ -1,0 +1,83 @@
+.container {
+  height: 100%;
+  width: 800px;
+  color: black;
+  overflow-x: hidden; /* 가로 오버플로우 숨김 */
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  margin-bottom: clamp(0.8rem, 0.9vh, 30px); /* 최소 0rem, 최대 30px */
+}
+
+.graphContainer {
+  display: flex;
+  width: 99.7%; /* 부모 컨테이너와 동일한 너비 */
+  height: calc(100% - 3rem); /* 부모 컨테이너 높이에 따라 고정된 계산 */
+  border: 1px solid #ccc;
+}
+
+.categoryColumn {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  padding-top: 30px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.categoryLabel {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1.05rem;
+  padding-top: clamp(7px, 1vh, 100px); /*최소 7px, 최대 50px*/
+}
+
+.scrollableContainer {
+  flex: 1;
+  overflow-x: auto; /* 가로 스크롤 허용 */
+}
+
+.dataColumns {
+  display: flex;
+}
+
+.dataColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 자식 요소 간 간격 균등 분배 */
+  height: calc(100% - var(--padding)); /* 부모 컨테이너와 동일한 높이를 유지 */
+  align-items: center;
+  padding: 0 0.3rem;
+}
+
+.dataColumn > * {
+  margin: 0; /* 불필요한 마진 제거 */
+}
+
+.dateLabel {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0.1vh 0;
+  white-space: pre-wrap;
+}
+
+.valueCircle {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: clamp(7px, 1vh, 100px); /*최소 7px, 최대 50px*/
+  color: #000;
+}
+
+.emptyCircle {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-top: clamp(7px, 1vh, 100px); /*최소 7px, 최대 50px*/
+}

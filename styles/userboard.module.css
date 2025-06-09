@@ -1,0 +1,56 @@
+.container {
+  margin: 1dvh 1dvw;
+  height: 82dvh;
+  min-height: 830px;
+  width: 84dvw;
+  min-width: 1500px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 0 5px 10px grey; /* 그림자 효과 추가 */
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.comments {
+  flex: 1;
+  padding: 0;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  /* background-color: pink; */
+}
+
+.graphContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  height: 1px; /* Divider 높이 */
+  background-color: lightgray; /* Divider 색상 */
+  margin: 5px 0px;
+}
+
+.fatigueGraph {
+  flex: 4;
+  /* background-color: papayawhip; */
+}
+
+.goalGraph {
+  flex: 3;
+  /* background-color: lightyellow; */
+  color: black;
+}
+
+.surveyGraph {
+  flex: 4;
+  /* background-color: green; */
+  color: white;
+}
+
+.healthReport {
+  flex: 1;
+  /* background-color: skyblue; */
+}
